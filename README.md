@@ -1,1 +1,4 @@
 # cancer-subtyping-nextflow-pipeline
+Ovarian Cancer Subtyping using Foundation Models – Nextflow Pipeline
+
+The pipeline starts with loading the data, for which I'll need a custom dataloader due to the complex structure of my data, which consists of patches from different slides representing five subtypes of ovarian cancer, each slide having 200 patches. In the next step, I will preprocess and normalize the data. The third step involves training several foundation models, either by fine-tuning the entire model or freezing parts of it while adding a trainable layer. The models I plan to use include Phikon, H-optimus-0, and pretrained ViT. After training, I will evaluate the model's performance using metrics such as balanced accuracy, precision, and recall. Finally, visualizations like UMAP will be employed to show how well the model differentiates between slides with distinct subtypes.
