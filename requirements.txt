@@ -1,0 +1,9 @@
+torch
+torchvision
+tqdm
+shutil
+random
+numpy
+timm
+itertools
+huggingface_hub
