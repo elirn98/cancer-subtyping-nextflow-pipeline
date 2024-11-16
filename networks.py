@@ -293,7 +293,7 @@ class FeatureExtractor(nn.Module):
             self.backbone = vit_small(pretrained=True, progress=False, key="DINO_p16", patch_size=16)
         elif args.model == 'UNI':
             import sys
-            login(token="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")
+            login(token)
             # self.backbone = timm.create_model("hf-hub:MahmoodLab/uni", pretrained=True, init_values=1e-5, dynamic_img_size=True, use_auth_token=True)
             # self.backbone.eval()
             local_dir = "./assets/ckpts/vit_large_patch16_224.dinov2.uni_mass100k/"
@@ -324,7 +324,6 @@ class FeatureExtractor(nn.Module):
             self.backbone = my_model(self.backbone, self.feature_dim)
 
         elif args.model == 'H-optimus-0':
-            # login("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")
             self.backbone = timm.create_model(
                 "hf-hub:bioptimus/H-optimus-0", pretrained=True, init_values=1e-5, dynamic_img_size=False
             )
