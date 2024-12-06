@@ -1,0 +1,67 @@
+# General ignore patterns
+*.py
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+*.swo
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.bak
+*.tmp
+
+# Python-specific ignore patterns
+env/
+venv/
+*.egg-info/
+*.eggs/
+pip-wheel-metadata/
+*.whl
+dist/
+build/
+.coverage
+.tox/
+
+# Nextflow-specific ignore patterns
+.nextflow/
+.nextflow.log*
+work/
+.cache/
+output/
+*.trace
+*.nxf.*
+executor.log
+
+# Git ignore files
+.git/
+.gitignore
+
+# Node.js specific files (if your project uses a front-end)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+outputs/
+# Secrets and credentials
+*.pem
+*.key
+*.crt
+*.env
+secrets/
+
+# Temporary and backup files
+*.tmp
+*.bak
+*.old
+*.orig
+
+
+# Ignore unnecessary docs
+docs/
+*.md
+README.md
+LICENSE

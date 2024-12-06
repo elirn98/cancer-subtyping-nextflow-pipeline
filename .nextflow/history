@@ -1,0 +1,2 @@
+2024-12-03 04:14:37	32.2s	nostalgic_nobel	ERR	464b35dcb13876aca3da9ff1df507a70	73915cf3-7b59-4047-b6aa-aa4c4905a981	nextflow run app/pipeline.nf
+2024-12-03 04:17:28	31.4s	friendly_bassi	ERR	464b35dcb13876aca3da9ff1df507a70	33fed53e-e316-4660-befc-9e0640965c24	nextflow run app/pipeline.nf

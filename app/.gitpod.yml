@@ -1,0 +1,8 @@
+image:
+  file: cancer-subtyping:v1.0  # Custom Dockerfile (optional)
+
+tasks:
+  - init: npm install       # Commands to run when the workspace initializes
+    command: npm start      # Commands to start the development server
+
+workspaceClass: 2XLarge      # Set the workspace class (optional)
