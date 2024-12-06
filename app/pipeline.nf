@@ -56,9 +56,9 @@ process test_Hoptimus0 {
 
 workflow {
 
-    (hoptimus0_model, model_statistics)=train_Hoptimus0(params.MODEL, params.SAVE_PATH, params.DATA_PATH)
-    test_results = test_Hoptimus0(hoptimus0_model, params.SAVE_PATH, params.DATA_PATH)
-    visualize(model_statistics, test_results, params.PLOT_PATH)
+    // (hoptimus0_model, model_statistics)=train_Hoptimus0(params.MODEL, params.SAVE_PATH, params.DATA_PATH)
+    test_results = test_Hoptimus0("/app/${params.SAVE_PATH}/model.pth.tar", params.SAVE_PATH, params.DATA_PATH)
+    visualize("/app/${params.SAVE_PATH}/train_statistics.pkl", test_results, params.PLOT_PATH)
 
 
 }

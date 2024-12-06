@@ -3,7 +3,7 @@ import torch
 import torchvision
 from torchvision import transforms
 from torch import nn
-from networks import FeatureExtractor, FeatureHead
+from networks import FeatureExtractor
 from tqdm import tqdm
 import shutil
 import os

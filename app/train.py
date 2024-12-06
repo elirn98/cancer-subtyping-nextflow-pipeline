@@ -44,7 +44,7 @@ parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('--model', type=str, default='H-optimus-0',
                     help='name of the model')
 parser.add_argument('--seed', type=int, default=42, help='random seed')
-parser.add_argument('--num_epochs', type=int, default=3,
+parser.add_argument('--num_epochs', type=int, default=1,
                     help="number of rounds of training")
 parser.add_argument('--save_dir', type=str, default='outputs', help='path \
                         to save results')
