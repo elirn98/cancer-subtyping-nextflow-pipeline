@@ -64,7 +64,8 @@ You can find the dataset in the `data` folder in the GitHub repository.
 git clone https://github.com/elirn98/cancer-subtyping-nextflow-pipeline
 ```
 
-3. Download the Docker image:
+3. Download the Docker image (optional):
+   Nextflow will automatically download all the container
 ```bash
 docker pull elirn98/cancer_subtyping_nextflow_pipeline:v1
 ```
